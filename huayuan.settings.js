@@ -1,3 +1,6 @@
+// huayuan.maid-kinght-simulator.settings
+// 女骑士模拟器 - 画鸢修改器 - 设置项
+
 // 事件名称中文映射
 const eventNameMap = {
     "wind": "风事件",
@@ -58,7 +61,7 @@ const statusNameMap = {
     "e_lv": "露出癖",
     "u_lv": "尿道开发",
     "u_exp": "尿道经验",
-    "p_lv": "受虐狂",
+    "p_lv": "受虐癖",
     "p_exp": "受虐经验",
     "s_exp": "精液经验",
     "s_lv": "精液中毒",
@@ -82,13 +85,13 @@ function initOriginalChanceFunctions() {
 // 打开设置页面
 function openSettings() {
     document.getElementById('settings').style.display = 'block';
-    // 初始化事件禁用下拉列表
+    // 初始化事件下拉列表
     initEventDisableSelect();
-    // 初始化数值选择下拉列表
+    // 初始化数值下拉列表
     initValueSelect();
-    // 初始化状态选择下拉列表
+    // 初始化状态下拉列表
     initStatusSelect();
-    // 初始化原始触发概率函数
+    // 初始化事件原始触发概率
     initOriginalChanceFunctions();
 }
 
@@ -97,7 +100,7 @@ function closeSettings() {
     document.getElementById('settings').style.display = 'none';
 }
 
-// 初始化事件禁用下拉列表
+// 初始化事件下拉列表
 function initEventDisableSelect() {
     const eventDisableSelect = document.getElementById('event-disable-select');
     eventDisableSelect.innerHTML = '';
@@ -145,7 +148,7 @@ function enableEvent(eventName) {
     }
 }
 
-// 初始化数值选择下拉列表
+// 初始化数值列表
 function initValueSelect() {
     const valueSelect = document.getElementById('value-select');
     valueSelect.innerHTML = '';
@@ -168,7 +171,7 @@ function modifyValue() {
     }
 }
 
-// 初始化状态选择下拉列表
+// 初始化状态列表
 function initStatusSelect() {
     const statusSelect = document.getElementById('status-select');
     statusSelect.innerHTML = '';
