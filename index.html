@@ -76,24 +76,31 @@
     <button onclick="fast_btn()">快速</button>
     <button onclick="openSettings()">画鸢</button>
 </p>
-<p id="attribute">本游戏纯属虚构，如有雷同，纯属巧合。登场人物均满十八岁。</p>
+<p id="attribute">剧情为虚构创作，如有雷同，纯属巧合。<br>登场人物除特别声明外均已满十八岁。<br>游玩时请遵守您所在国家或地区的法律。<br>如您未满十八岁，请立即退出本作页面。</p>
 
 <div id="settings" style="display: none;">
+    <h3>画鸢</h3>
+    版本：<a href="https://github.com/HuaYuanCN/Maid-Knight-Simulator">HY_MKS_1.0.0_20250701</a>
+    <br>
+    <br>原始版本作者已经不可考，本版本基于互联网流传构建，由画鸢进行后续分支和事件的更新，敬请期待。
+    <br>
+    <br><button onclick="closeSettings()">关闭面板</button>
+
     <h3>画鸢修改器</h3>
-    画鸢修改器
+    修改器数据
     <button onclick="openSettings()">刷新</button>
-    <button onclick="closeSettings()">关闭</button>
-    <h3>事件修改</h3>
+
+    <h3>修改器：事件修改</h3>
     <select id="event-disable-select"></select>
     <button onclick="disableSelectedEvent()">禁用</button>
     <button onclick="enableSelectedEvent()">启用</button>
 
-    <h3>数值修改</h3>
+    <h3>修改器：数值修改</h3>
     <select id="value-select"></select>
     <input type="text" id="value-input">
     <button onclick="modifyValue()">修改</button>
 
-    <h3>状态修改</h3>
+    <h3>修改器：状态修改</h3>
     <select id="status-select"></select>
     <button onclick="addStatus()">添加</button>
     <button onclick="removeStatus()">移除</button>
