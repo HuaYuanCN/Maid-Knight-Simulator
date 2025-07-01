@@ -10,31 +10,40 @@
       content="女骑士模拟器，内置画鸢修改器，可禁用事件、修改数值、增删状态等。点击开始按钮，你的角色就会开始进行一次同人 RPG 游戏女主角风格的全自动或半自动冒险，期间可以暂停修改数值，再继续进行游戏——持续到达成某个结局为止。"
     />
     <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    .column {
-      float: left;
-      padding: 10px;
-      overflow-x: hidden;
-      overflow-y:auto;
-      height:80vh;
-    }
-
-    .left {
-      width: 30%;
-    }
-
-    .right {
-      width: 70%;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+ * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+      }
+      body {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+      }
+      h2,
+      p {
+        margin-top: 0;
+      }
+      .row {
+        flex: 1 1 auto;
+        display: flex;
+        overflow: hidden;
+      }
+      .left {
+        flex: 0 0 auto;
+        overflow-y: auto;
+        margin-right: 24px;
+      }
+      .right {
+        flex: 1 1 auto;
+        overflow-y: auto;
+      }
     </style>
 
     <script type="text/javascript" src="main.js"></script>
